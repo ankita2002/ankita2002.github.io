@@ -1,0 +1,43 @@
+.about {
+    text-align: center;
+}
+
+.dp {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.name {
+    margin-top: 20px;
+}
+
+.about-me-description {
+    margin: auto;
+    margin-top: 40px;
+    max-width: 22cm;
+}
+
+.tech-skills {
+    margin-top: 60px;
+}
+
+.tech-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tech-skills-badge {
+    margin: 25px;
+    width: 3cm;
+}
+
+.tech-skills-badge img {
+    width: 2cm;
+    margin-bottom: 10px;
+    transition: transform 200ms;
+}
+
+.tech-skills-badge img:hover {
+    transform: scale(0.9);
+}

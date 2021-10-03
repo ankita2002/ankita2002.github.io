@@ -1,237 +1,496 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- metadata -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      </head>
-         <style>
-        #about {
-  text-align: center;
-  padding: 40px;
-}
-#about img {
-  width: 200px;
-  border-radius: 100%;
-}
-#about h1 {
-  margin: 25px;
-}
-section {
-  padding-bottom: 40px;
-}
-.card .card-header {
-  cursor: pointer;
-}
-    </style>
 
-  <body>
+    <!-- favicon and title of the webpage -->
+    <link rel="icon" href="assets/images/ankita.jpg" />
+    <title>Ankita Upadhyay - Portfolio</title>
 
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">Ankita Upadhyay</a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item"> <a class="nav-link" href="#projects">Major Projects</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#socials">Social Media</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a> </li>
-        </ul>
-      </div>
+    <!-- Bootstrap CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Nunito&display=swap" rel="stylesheet">
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/about-me.css" />
+
+</head>
+<body onload="navbarOnLoad()">
+
+    <!-- navigation bar -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand heading" href="#">Ankita Upadhyay</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="max-width: 13cm !important;">
+                <div class="navbar-nav">
+                    <a class="nav-link sub-heading" href="#about" onclick="navbar(0)">
+                        About Me
+                    </a>
+
+                    <a class="nav-link sub-heading" href="#experiences" onclick="navbar(1)">
+                        Experiences
+                    </a>
+
+                    <a class="nav-link sub-heading" href="#projects" onclick="navbar(2)">
+                        Projects
+                    </a>
+
+                    <a class="nav-link sub-heading" href="#socials" onclick="navbar(3)">
+                        Social Media
+                    </a>
+
+                    <a class="nav-link sub-heading" href="#contact" onclick="navbar(4)">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
     </nav>
 
+    <!-- about me -->
+    <section id="about" class="container my-container about">
+        <img class="dp" src="assets/images/ankita.jpg" alt="Ankita" />
 
-    <!--| ABOUT |--------------------------------------------------->
-    <section id="about" class="container">
-      <img src="ankita.jpg">
-      <h1 class="display-4">Ankita Upadhyay</h1>
-      <p>
-        I am a young aspiring Engineer who likes Competitive Coding, and Exploring the world of Technology and Science. Apart from technical Stuff , I am also a great writer and my Hobbies includes Reading ,Singing, Painting and Writing Poems ,composing Songs. My Greatest Strength is that I can easily make connections. 
-      </p>
-      <p>
-        <strong>Technical Skills:</strong>
-        <span class="badge badge-info">Bootstrap</span>
-        <span class="badge badge-info">R</span>
-        <span class="badge badge-info">Python</span>
-        <span class="badge badge-info">HTML</span>
-        <span class="badge badge-info">CSS</span>
-        <span class="badge badge-info">JavaScript</span>
-        <span class="badge badge-info">SASS</span>
-        <span class="badge badge-info">Java</span>
-        <span class="badge badge-info">C/C++</span>
-        <span class="badge badge-info">PHP</span>
-        <span class="badge badge-info">MySQL</span>
-                <span class="badge badge-info">django</span>
-        <span class="badge badge-info">figma</span>
-        <span class="badge badge-info">Etherium</span>
-        <span class="badge badge-info">Blockchain</span>
-        <span class="badge badge-info">Git</span>
-        <span class="badge badge-info">Bash</span>
+        <h1 class="display-4 name heading">Ankita Upadhyay</h1>
 
-      </p>
+        <p class="about-me-description">
+            I am a young aspiring engineer who likes competitive coding, and exploring the world of technology and
+            science. Apart technical stuff, I am also a great writer and my hobbies includes reading, singing, painting
+            and writing poems, composing songs. My greatest strength is that I can easily make connections.
+        </p>
+
+        <div class="tech-skills">
+            <h2 class="heading" style="text-align: left;">Technical Skills</h2>
+
+            <div class="tech-skills-container">
+                <figure class="tech-skills-badge">
+                    <img src="assets/images/tech-skills/html.png" alt="HTML">
+
+                    <figcaption>
+                        <h6>HTML</h6>
+                    </figcaption>
+                </figure>
+
+                <figure class="tech-skills-badge">
+                    <img src="assets/images/tech-skills/css.png" alt="CSS">
+
+                    <figcaption>
+                        <h6>CSS</h6>
+                    </figcaption>
+                </figure>
+
+                <figure class="tech-skills-badge">
+                    <img src="assets/images/tech-skills/javascript.png" alt="JavaScript">
+
+                    <figcaption>
+                        <h6>JavaScript</h6>
+                    </figcaption>
+                </figure>
+
+                <figure class="tech-skills-badge">
+                    <img src="assets/images/tech-skills/bootstrap.png" alt="Bootstrap">
+
+                    <figcaption>
+                        <h6>Bootstrap</h6>
+                    </figcaption>
+                </figure>
+
+                <figure class="tech-skills-badge">
+                    <img src="assets/images/tech-skills/sass.png" alt="SASS">
+
+                    <figcaption>
+                        <h6>SASS</h6>
+                    </figcaption>
+                </figure>
+
+                <figure class="tech-skills-badge">
+                    <img src="assets/images/tech-skills/mysql.png" alt="MySQL">
+
+                    <figcaption>
+                        <h6>MySQL</h6>
+                    </figcaption>
+                </figure>
+
+                <figure class="tech-skills-badge">
+                    <img src="assets/images/tech-skills/php.png" alt="PHP">
+
+                    <figcaption>
+                        <h6>PHP</h6>
+                    </figcaption>
+                </figure>
+
+                <figure class="tech-skills-badge">
+                    <img src="assets/images/tech-skills/c.png" alt="C">
+
+                    <figcaption>
+                        <h6>C</h6>
+                    </figcaption>
+                </figure>
+
+                <figure class="tech-skills-badge">
+                    <img src="assets/images/tech-skills/cpp.png" alt="C++">
+
+                    <figcaption>
+                        <h6>C++</h6>
+                    </figcaption>
+                </figure>
+
+                <figure class="tech-skills-badge">
+                    <img src="assets/images/tech-skills/java.png" alt="Java">
+
+                    <figcaption>
+                        <h6>Java</h6>
+                    </figcaption>
+                </figure>
+
+                <figure class="tech-skills-badge">
+                    <img src="assets/images/tech-skills/python.png" alt="Python">
+
+                    <figcaption>
+                        <h6>Python</h6>
+                    </figcaption>
+                </figure>
+
+                <figure class="tech-skills-badge">
+                    <img src="assets/images/tech-skills/django.png" alt="Django">
+
+                    <figcaption>
+                        <h6>Django</h6>
+                    </figcaption>
+                </figure>
+
+                <figure class="tech-skills-badge">
+                    <img src="assets/images/tech-skills/git.png" alt="Git">
+
+                    <figcaption>
+                        <h6>Git</h6>
+                    </figcaption>
+                </figure>
+
+                <figure class="tech-skills-badge">
+                    <img src="assets/images/tech-skills/bash.png" alt="Bash">
+
+                    <figcaption>
+                        <h6>Bash</h6>
+                    </figcaption>
+                </figure>
+
+                <figure class="tech-skills-badge">
+                    <img src="assets/images/tech-skills/r.png" alt="R">
+
+                    <figcaption>
+                        <h6>R</h6>
+                    </figcaption>
+                </figure>
+
+                <figure class="tech-skills-badge">
+                    <img src="assets/images/tech-skills/figma.png" alt="Figma">
+
+                    <figcaption>
+                        <h6>Figma</h6>
+                    </figcaption>
+                </figure>
+
+                <figure class="tech-skills-badge">
+                    <img src="assets/images/tech-skills/blockchain.png" alt="Blockchain">
+
+                    <figcaption>
+                        <h6>Blockchain</h6>
+                    </figcaption>
+                </figure>
+
+                <figure class="tech-skills-badge">
+                    <img src="assets/images/tech-skills/etherium.png" alt="Etherium">
+
+                    <figcaption>
+                        <h6>Etherium</h6>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
     </section>
 
-    <!-- EXPERIENCE --------------------------------------------->
-    <section id="experience" class="container">
-      <h1>Experience</h1>
-      <div class="card">
-        <div class="card-header collapse show" data-toggle="collapse" data-target="#exp1">
-          <div class="row">
-            <h5 class="col-md-8 mb-0">Web Developer</h5>
-            <em class="col-md-4 text-md-right">Aug 2020 - May 2021</em>
-          </div>
-        </div>
-        <div class="card-block collapse" id="exp1">
-          <h5><a href="https://drive.google.com/file/d/12euRhrM3cvaJcgJ1TZK5XA33XrOw5vwb/view?usp=sharing"> ECELL - SLRTCE </a>, Mira Road(E)</h5>
-          <p>
-            As a Technical Coordinator, I got the opportunity to develop ECELL-SLRTCE website with my teammates, apart from this i got the opportunity to attend various workshops regarding Entrepreneurship.
-            This also included content/post making for Instagram Page.
-            It also gave us opportunity to Orgranize various Event that came under E-SUMMIT. <br>
+    <!-- below element is handling all the accordions including
+    accordions used in "experiences" and "projects" sections -->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+    <!-- experiences -->
+    <section id="experiences" class="container my-container">
+        <h2 class="heading">Experiences</h2>
+
+            <!-- student coordinator -->
+            <!-- <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingZero">
+                    <button class="accordion-button collapsed sub-heading" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseZero" aria-expanded="false" aria-controls="flush-collapseZero">
+                        Student Coordinator
+                    </button>
+                </h2>
+
+                <div id="flush-collapseZero" class="accordion-collapse collapse" aria-labelledby="flush-headingZero" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="card exp-pro-desc">
+                            <div class="card-body">
+                                <h5 class="card-title">CSI - SLRTCE, Mira Road (E)</h5>
+
+                                <div class="duration">October 2020 to Present</div>
+
+                                <p class="card-text">
+                                    <ul>
+                                        <li>CSI gave us the opportunity to conduct & learn from technical workshops <em>(like Face Blur - Python - Django)</em> and other technical webnairs.</li>
+                                        <li>It gave us an opportunity to conduct coding competiton & technical Quizes & how events are to be managed backstage.</li>
+                                        <li>It helped us to gain event management skills.</li>
+                                    </ul>
+                                </p>
+
+                                <div class="view-button">
+                                    <a href="#" target="_blank" class="btn btn-primary">
+                                        View certificate
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- IT intern -->
+            <div class="accordion-item top-margin-from-my-containers-h2">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed sub-heading" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        IT Intern
+                    </button>
+                </h2>
+
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="card exp-pro-desc">
+                            <div class="card-body">
+                                <h5 class="card-title">Saiva Systems</h5>
+
+                                <div class="duration">July 2021 to August 2021</div>
+
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Got exposure to SRS and other paper work required before selecting a project.</li>
+                                        <li>Created a Resume Analyser which identifies input keywords from the files (resumes) in folder using Python.</li>
+                                    </ul>
+                                </p>
+
+                                <div class="view-button">
+                                    <a href="https://drive.google.com/file/d/1-oC5fEuwOt2BbNLOEhiNafQl2F1WUMu7/view?usp=sharing" target="_blank" class="btn btn-primary">
+                                        View certificate
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-            • Designed and Implemented Our Team Section of the page <br>
-            • Testing of all links & connectivity <br>
-            • Learnt how to use Backend technology and how to work in a team <br>
-            <b> Technologies used: </b> Node.js, React JS, Html, SASS, Bootstrap <br>
-          </p>
-        </div>
-      </div>
-      
-       <div class="card">
-        <div class="card-header" data-toggle="collapse" data-target="#exp2">
-          <div class="row">
-            <h5 class="col-md-8 mb-0">IT Intern</h5>
-            <em class="col-md-4 text-md-right">July 2021 - August 2021</em>
-          </div>
-        </div>
-     <div class="card-block collapse" id="exp2">
-       <h5><a href = "https://drive.google.com/file/d/1-oC5fEuwOt2BbNLOEhiNafQl2F1WUMu7/view?usp=sharing">Saiva Systems</a></h5>
-          <p> 
-            Got exposure to SRS and other paper work required before selecting a project. <br>
-            Created a Resume Analyser which identifies input keywords from the files(Resumes) in Folder using Python 
-          </p>
-        </div>
-      </div>
-      
-  <!--    <div class="card">
-        <div class="card-header" data-toggle="collapse" data-target="#exp2">
-          <div class="row">
-            <h5 class="col-md-8 mb-0">Student Coordinator</h5>
-            <em class="col-md-4 text-md-right">Oct 2020 - Present</em>
-          </div>
-        </div>
-     <div class="card-block collapse" id="exp2">
-          <h5>CSI - SLRTCE, Mira Road (E)</h5>
-          <p>
-            CSI gave us the opportunity to conduct & learn from technical workships (Face Blur - Python -Django) and other technical webnairs.
-            It gave us an opportunity to conduct coding competiton & technical Quizes & how events are to be managed Backstage.  
-            It helped us to gain Event Management skills.
-          </p>
-        </div>
-      </div>
-  -->
-    <div class="card">
-        <div class="card-header" data-toggle="collapse" data-target="#exp3">
-          <div class="row">
-            <h5 class="col-md-8 mb-0">Campus Ambassador</h5>
-            <em class="col-md-4 text-md-right">Nov 2020 - Jan 2020</em>
-          </div>
-        </div>
-        <div class="card-block collapse" id="exp3">
-          <h5><a href= "https://drive.google.com/file/d/1CKViwREGCEBWj__JPlQ4saSmp0mqKLJB/view?usp=sharing">Grasp Anything - SLRTCE</a>, Mira Road</h5>
-          <p>
-            It was an Online Internship Programme - Marketing (Non-Technical)
-            Here we all group of people from all over Maharashtra discussed and performed some task that would help the company to improve its reach.
-            We did some small research and survey on companY's social media pages and how we can improve the reach, It gave an opportunity to learn about different ideas and techniques and how to judge its efficiency. 
-          </p>
-        </div>    
-      </div>
+            <!-- web developer -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed sub-heading" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Web Developer
+                    </button>
+                </h2>
+
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="card exp-pro-desc">
+                            <div class="card-body">
+                                <h5 class="card-title">ECell - SLRTCE, Mira Road (E)</h5>
+                                
+                                <div class="duration">August 2020 to May 2021</div>
+
+                                <p class="card-text">
+                                    As a Technical Coordinator, I got the opportunity to develop ECell-SLRTCE website with my teammates, apart from this I opportunity to attend various workshops regarding entrepreneurship. This also included content/post making for Instagram page. It also gave opportunity to orgranize various events that came under E-SUMMIT.
+                                    
+                                    <ul>
+                                        <li>Designed and implemented our <strong>team</strong> section of the page.</li>
+                                        <li>Testing of all links & connectivity.</li>
+                                        <li>Learnt how to use backend technology and how to work in a team.</li>
+                                        <li><strong>Technologies used:</strong> HTML, SASS, Bootstrap, Node.js, ReactJS</li>
+                                    </ul>
+                                </p>
+
+                                <div class="view-button">
+                                    <a href="https://drive.google.com/file/d/12euRhrM3cvaJcgJ1TZK5XA33XrOw5vwb/view?usp=sharing" target="_blank" class="btn btn-primary">
+                                        View certificate
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- campus ambassador -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed sub-heading" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Campus Ambassador
+                    </button>
+                </h2>
+
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="card exp-pro-desc">
+                            <div class="card-body">
+                                <h5 class="card-title">Grasp Anything - SLRTCE, Mira Road</h5>
+                                
+                                <div class="duration">November 2019 to January 2020</div>
+
+                                <p class="card-text">
+                                    It was an online internship programme - marketing (non-technical). Here we all group of people from all over Maharashtra and performed some task that would help the company to improve its reach. We did some small research and survey on company's media pages and how we can improve the reach, tt gave an opportunity to learn about different ideas and techniques and how to its efficiency.
+                                </p>
+
+                                <div class="view-button">
+                                    <a href="https://drive.google.com/file/d/1CKViwREGCEBWj__JPlQ4saSmp0mqKLJB/view?usp=sharing" target="_blank" class="btn btn-primary">
+                                        View certificate
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
 
-    <!-- Major Projects ----------------------------------------------->
-    <section id="projects" class="container">
-      <h1>Major Projects</h1>
-      
-      <div class="card">
-        <div class="card-header collapse show" data-toggle="collapse" data-target="#exp4">
-          <div class="row">
-            <h5 class="col-md-8 mb-0">Face Mask Detection & Attendance System</h5>
-            <em class="col-md-4 text-md-right">Aug 2020 - May 2021</em>
-          </div>
-        </div>
-        <div class="card-block collapse" id="exp4">
-          <h5><a href="https://github.com/include-us/Face-Mask-Detection-Attendance-System">Face Mask Detection & Attendance System</a>, Second Year Mini Project 2020-21 </h5>
-          <p>
-        •It is a basic attendance system based on GUI and marks attendance only if the mask is detected and uses SQLITE database. <br>
-        • It is made using modules like Keras and Tensorflow <br>
-        • We have used HaarCascade method to build this project. It uses classification models <br>
-        • We also published <a href="http://www.ijsrp.org/research-paper-0321.php?rp=P11111091">Survey Paper</a> ans <a href ="https://www.irjet.net/archives/V8/i6/IRJET-V8I6601.pdf">Research Paper</a> on the same topic <br>
-        • This Project detects face of the person and checks whether mask is present or not, if mask is not present it reflects no mask detected & starts with face mask detection again. If mask is present then it marks attendance using Barcode/RFID tags and updates the same in the Database. <br>
-        <h6>Note: More Projects Available on <a href="https://github.com/ankita2002">Github</a> </h6>
-          </p>
-        </div>
-      </div>
-    
-    <div class="card">
-        <div class="card-header collapse show" data-toggle="collapse" data-target="#exp5">
-          <div class="row">
-            <h5 class="col-md-8 mb-0">Harry Potter’s Invisible Cloak</h5>
-            <em class="col-md-4 text-md-right">July 2021</em>
-          </div>
-        </div>
-        <div class="card-block collapse" id="exp5">
-          <h5><a href="https://github.com/ankita2002/Invisible">Harry Potter's Invisble Cloak using OpenCv </a>, Personal Project July 2021 </h5>
-          <p>
-        •It is made using OpenCv <br>
-        • We will be using Image Processing technique for color Detection & Segmentation<br>
-        • For this project we will be using a red color cloth (make sure its plain Red) and any red color object in frame will be invisible too <br>
-        • It works best in good lightening Conditions <br>
-        <h6>Note: More Projects Available on <a href="https://github.com/ankita2002">Github</a> </h6>
-          </p>
-        </div>
-      </div>
-    
-      </section>
+    <!-- projects -->
+    <section id="projects" class="container my-container">
+        <h2 class="heading">Projects</h2>
 
+            <!-- face mask detection & attendance system -->
+            <div class="accordion-item top-margin-from-my-containers-h2">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed sub-heading" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Face Mask Detection & Attendance System
+                    </button>
+                </h2>
 
-    <!-- Social Media------------------------------------------------->
-    <section class ="container" id="socials">
-    <h1> Social Media </h1>
-        <!-- <div class="col-sm-4"><a href="https://www.linkedin.com/in/ankita-upadhyay-7239821a9/">LinkedIn</a></div> -->
-        <div class="col-sm-4"><a href="https://github.com/ankita2002">Github</a></div>
-        <div class="col-sm-4"><a href="https://www.qwiklabs.com/public_profiles/d3e47297-e1df-46d4-a2b3-7643419a16e1">Qwicklabs</a></div>
-        <div class="col-sm-4"><a href="https://www.codechef.com/users/ankita2008">Codechef</a></div>
-        <div class="col-sm-4"><a href="https://www.hackerrank.com/ankitaupadhyaya2">HackerRank</a></div>
-        <div class="col-sm-4"><a href="https://leetcode.com/ankita2008/">Leetcode</a></div>
-        <div class="col-sm-4"><a href="https://docs.microsoft.com/en-us/users/ankitaupadhyay-7873/">Microsoft Learn</a></div>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="card exp-pro-desc">
+                            <div class="card-body">
+                                <h5 class="card-title">Second Year Mini Project</h5>
+                                
+                                <div class="duration">August 2020 to May 2021</div>
 
+                                <p class="card-text">
+                                    <ul>
+                                        <li>It is a basic attendance system based on GUI and marks attendance only if the mask is detected and it uses SQLite database.</li>
+                                        <li>It is made using modules like Keras and Tensorflow.</li>
+                                        <li>We have used HaarCascade method to build this project. It uses classification models.</li>
+                                        <li>We also published a <a href="http://www.ijsrp.org/research-paper-0321.php?rp=P11111091">survey paper</a> and a <a href="https://www.irjet.net/archives/V8/i6/IRJET-V8I6601.pdf">research paper</a> on the same topic.</li>
+                                        <li>This project detects face of the person and checks whether mask is present or not, if mask is not present it reflects no mask detected & starts with face mask detection again. If mask is present then it marks attendance using Barcode/RFID tags and updates the same in the database.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- harry potter’s invisible cloak -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed sub-heading" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        Harry Potter’s Invisible Cloak
+                    </button>
+                </h2>
+
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="card exp-pro-desc">
+                            <div class="card-body">
+                                <h5 class="card-title">Personal Project</h5>
+                                
+                                <div class="duration">July 2021</div>
+
+                                <p class="card-text">
+                                    <ul>
+                                        <li>It is made using OpenCv.</li>
+                                        <li>We will be using image processing technique for color detection & segmentation.</li>
+                                        <li>For this project, we will be using a red color cloth <em>(make sure its plain red)</em> and any red color object in frame will be invisible too.</li>
+                                        <li>It works best in good lightening conditions.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-button" style="margin-top: 40px;">
+                <a href="https://github.com/ankita2002" target="_blank" class="btn btn-primary">
+                    View more projects
+                </a>
+            </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- below element is closing tag for the tag,
+    which is handling all the accordions -->
+    </div>
 
-    <section class="container" id="contact">
-      <h1>Contact:</h1>
-     <!-- <div class="row">
-        <div class="col-sm-2">Phone:</div>
-        <div class="col-sm-4">99******21</div>
-      </div> -->
-      <div class="row">
-        <div class="col-sm-2">Email:</div>
-        <div class="col-sm-4"><a href="mailto:ankitaupadhyaya209@gmail.com">ankitaupadhyaya209@gmail.com</a></div>
-      </div>
-      <div class="row">
-        <div class="col-sm-2">LinkedIn:</div>
-        <div class="col-sm-4"><a href="https://www.linkedin.com/in/ankita-upadhyay-7239821a9/">Ankita Upadhyay</a></div>
-      </div>
-    </section> 
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  </body>
+    <!-- social media -->
+    <section id="socials" class="container my-container">
+        <h2 class="heading">Follow me on</h2>
+
+        <div class="top-margin-from-my-containers-h2">
+            <a class="btn btn-primary" href="https://github.com/ankita2002" target="_blank" role="button">
+                GitHub
+            </a>
+            <a class="btn btn-primary" href="https://www.qwiklabs.com/public_profiles/d3e47297-e1df-46d4-a2b3-7643419a16e1" target="_blank" role="button">
+                QwickLabs
+            </a>
+            <a class="btn btn-primary" href="https://www.codechef.com/users/ankita2008" target="_blank" role="button">
+                CodeChef
+            </a>
+            <a class="btn btn-primary" href="https://www.hackerrank.com/ankitaupadhyaya2" target="_blank" role="button">
+                HackerRank
+            </a>
+            <a class="btn btn-primary" href="https://leetcode.com/ankita2008/" target="_blank" role="button">
+                LeetCode
+            </a>
+            <a class="btn btn-primary" href="https://docs.microsoft.com/en-us/users/ankitaupadhyay-7873/" target="_blank" role="button">
+                Microsoft Learn
+            </a>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="container my-container">
+        <h2 class="heading">Contact Me</h2>
+
+        <div class="d-grid gap-2 col-6 mx-auto top-margin-from-my-containers-h2">
+            <a class="btn btn-primary" href="mailto:ankitaupadhyaya209@gmail.com" target="_blank" role="button">
+                Email
+            </a>
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/ankita-upadhyay-7239821a9/" target="_blank" role="button">
+                LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/navbar.js"></script>
+</body>
 </html>
