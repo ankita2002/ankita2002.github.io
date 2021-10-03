@@ -1,0 +1,41 @@
+body {
+    margin-top: 1.8cm;
+}
+
+.my-container {
+    padding: 40px;
+}
+
+.top-margin-from-my-containers-h2 {
+    margin-top: 40px;
+}
+
+.accordion-item h2 button {
+    font-weight: bold;
+}
+
+.exp-pro-desc {
+    border: none;
+}
+
+.duration {
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.view-button {
+    text-align: right;
+}
+
+/* font styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading {
+    font-family: 'Amaranth', sans-serif;
+}
+
+.sub-heading {
+    font-family: 'Nunito', sans-serif;
+}
