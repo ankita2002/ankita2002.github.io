@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Data</title>
+</head>
+<body bgcolor="black">
+    <table border="1" bgcolor="add8e6"  width="800px" cellpadding="6" cellspacing="0" align="center">
+        <form action="">
+        <tr>
+            <td align="center" colspan="2"><h2>Students BioData</h2>  </td>   
+        </tr>
+        <tr>
+            <td width="25%">Name: </td>
+            <td><input type="text" name="" id="" value="Ravi kant Chauhan"></td>
+        </tr>
+        <tr>
+            <td>DOB: </td>
+            <td><input type="date" name="" id=""></td>
+
+        </tr
+        <tr>
+            <td>Address: </td>
+            <td><textarea rows="4" cols="80" >Vill Chanakpur(Titira) post uchahuwan district Azamgarh Uttar Pradesh pincode 276126
+            </textarea></td>
+        </tr>
+        <tr>
+            <td>Gender: </td>
+            <td><input type="radio" name="gender" id="" checked> Male
+            <input type="radio" name="gender" id="">Female 
+        <input type="radio" name="gender" id="">Other</td>
+        </tr>
+        <tr>
+            <td>Language: </td>
+            <td>
+                <input type="checkbox" name="M" id=""> Hindi
+                <input type="checkbox" name="" id=""> English
+                
+                <input type="checkbox" name="M" id=""> Odia
+                
+                <input type="checkbox" name="M" id=""> Urdu
+            </td>
+        </tr>
+        <tr>
+            <td>Religion: </td>
+            <td><select name="" id="">
+            <option value="Select">Select</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Muslim">Muslim</option>
+                <option value="Sikh">Sikh</option>
+                <option value="Christian">Christian</option>
+
+            </select></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center" cellspacing="100px">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </td>
+        </tr> 
+    </form>
+    </table>
+</body>
+</html>
