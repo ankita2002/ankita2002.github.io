@@ -30,6 +30,8 @@ body {
 /* font styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('/assets/images/backg.jpg');
+    /* background-image: ; */
 }
 
 .heading {
