@@ -1,13 +1,17 @@
 .socials-contact-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .socials-contact-link img {
-    margin: 10px;
-    height: 2cm;
-    transition: transform 200ms;
+  margin: 10px;
+  height: 2cm;
+  transition: transform 200ms;
 }
 
 .socials-contact-link img:hover {
-    transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.github {
+  filter: invert(100%);
 }
