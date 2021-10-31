@@ -41,3 +41,22 @@
 .tech-skills-badge img:hover {
     transform: scale(0.9);
 }
+
+.my-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+.my-profile a{
+    color: black;
+    margin: 1rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    font-size: xx-large;
+    transform: scale(1);
+}
+.my-profile a:hover{
+    color: rgb(46, 46, 46);
+    transform: scale(1.05);
+}
