@@ -41,3 +41,7 @@ body {
 .sub-heading {
     font-family: 'Nunito', sans-serif;
 }
+
+.nav-text {
+    color: aqua !important;
+}
