@@ -19,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- fonts by iconify -->
     <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
@@ -41,7 +42,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="max-width: 13cm !important;">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="max-width: 13.5cm !important;">
                 <div class="navbar-nav">
                     <a class="nav-link sub-heading" href="#about" onclick="navbar(0)">
                         About Me
@@ -62,6 +63,10 @@
                     <a class="nav-link sub-heading" href="#contact" onclick="navbar(4)">
                         Contact Me
                     </a>
+                    <a class="nav-link sub-heading theme" id="dark" onclick="todark()"><span
+                            class="material-icons">dark_mode</span></a>
+                    <a class="nav-link sub-heading theme" id="light" onclick="tolight()">
+                        <span class="material-icons">light_mode</span></a>
                 </div>
             </div>
         </div>
@@ -585,6 +590,31 @@
             }
         };
     </script>
+
+    <!-- Light and Dark Theme -->
+    <script>
+        document.getElementById("light").style.display = "none";
+
+        function todark() {
+            document.body.style.backgroundColor = '#222';
+            document.getElementById("dark").style.display = "none";
+            document.body.style.color = '#fff'
+            document.getElementById("light").style.display = "inline";
+
+        }
+
+        function tolight() {
+            document.body.style.backgroundColor = '#fff';
+            document.getElementById("light").style.display = "none";
+            document.body.style.color = '#000'
+            document.getElementById("dark").style.display = "inline";
+
+
+
+        }
+    </script>
+
+
 </body>
 
 </html>
