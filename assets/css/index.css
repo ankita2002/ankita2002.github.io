@@ -37,6 +37,7 @@ body {
 
 /* font styles */
 body {
+
   background-color: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-image: url("/assets/images/download.jpeg");
@@ -50,6 +51,7 @@ body {
 
 .about {
   letter-spacing: 0.1rem;
+
 }
 
 .heading {
@@ -57,6 +59,7 @@ body {
 }
 
 .sub-heading {
+
   font-family: "Nunito", sans-serif;
 }
 
@@ -84,4 +87,5 @@ body {
   -webkit-transition: all 0.6s ease-in-out;
   -moz-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
+
 }
