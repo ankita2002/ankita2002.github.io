@@ -1,5 +1,30 @@
-.nav-link:hover {
-    /* background-color: #ececec; */
-    background-image: url('/assets/images/backg.jpg');
-    color: rgb(0, 0, 55);
+.navbar-nav {
+  display: table-cell;
+  position: relative;
+}
+
+.navbar-nav a {
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+.navbar-nav a:hover {
+  color: rgb(32, 112, 209) !important;
+}
+.navbar-nav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 7px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(32, 112, 209);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar-nav a:hover:after {
+  width: 100%;
+  left: 0;
 }
