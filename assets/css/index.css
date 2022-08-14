@@ -72,9 +72,19 @@ body {
     display: flex;
     justify-content: right;
 }
+
 .back_to_top a{
   color: black;
   font-size: 3rem;
   margin-top: -2rem;
   margin-bottom: 2rem;
+}
+
+#totop {
+    position: fixed;
+    font-size: 3rem;
+    bottom: 30px;
+    right: 14px; 
+    cursor: pointer;
+    
 }
